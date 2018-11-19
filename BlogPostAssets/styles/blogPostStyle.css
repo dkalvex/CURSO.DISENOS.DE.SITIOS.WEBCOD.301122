@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #mainwrapper header {
 	/*Header */
-	background-color: rgba(208,207,207,1.00);
+	background-color: rgba(255,255,255,1.00);
 	overflow: auto;
 	font-family: montserrat, sans-serif;
 	font-style: normal;
@@ -44,7 +44,7 @@ header nav a {
 #content #mainContent #bannerImage {
 	/*Container for main banner image */
 	width: 100%;
-	background-color: rgba(208,207,207,1.00);
+	background-color: rgba(255,255,255,1.00);
 }
 #content #mainContent p {
 	/* All paragraphs under maincontent */
@@ -56,10 +56,10 @@ header nav a {
 }
 #content #mainContent #authorInfo {
 	/* Author info section */
-	background-color: rgba(208,207,207,1.00);
+	background-color: rgba(255,255,255,1.00);
 }
 #content #mainContent #authorInfo h2, #content #mainContent #authorInfo p {
-	color: rgba(255,255,255,1.00);
+	color: rgba(0,0,0,1.00);
 	padding-left: 2%;
 	padding-top: 11px;
 }
@@ -111,6 +111,7 @@ footer article h3 {
 	/* Container of all content */
 	width: 80%;
 	overflow: auto;
+	
 	margin-left: 10%;
 }
 #content #sidebar input {
