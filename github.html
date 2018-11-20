@@ -117,12 +117,16 @@ $(function() {
             <h2><strong>Sobre GitHub</strong></h2>
             
             <a><strong>Github github.com es un servicio para alojamiento de repositorios de software gestionados por el sistema de control de versiones Git. Por tanto, Git es algo más general que nos sirve para controlar el estado de un desarrollo a lo largo del tiempo, mientras que Github es algo más particular: un sitio web que usa Git para ofrecer a la comunidad de desarrolladores repositorios de software. En definitiva, Github es un sitio web pensado para hacer posible el compartir el código de una manera más fácil y al mismo tiempo darle popularidad a la herramienta de control de versiones en sí, que es Git.</strong></a>
+			  
+			  <iframe width="560" height="315" src="https://www.youtube.com/embed/zprDrCwzn7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
 		    <h2><strong>Configuración local del repositorio de Git para documentación</strong></h2>
 			  <a><strong>Si es la primera vez que usa GitHub, vea el vídeo siguiente para obtener información general de carácter conceptual sobre el proceso de bifurcación y clonación:</a></strong>
-			  <iframe width="560" height="315" src="https://www.youtube.com/embed/zprDrCwzn7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			  
-			  <h2><strong>Fundamentos de Git</strong></h2>
+				 <video src="Multimedia/gitrepositorysetup_mid.mp4" width="560" height="315" preload="none" controls></video>
+			  
+			  
+              <h2><strong>Fundamentos de Git</strong></h2>
 			  <a><strong>Si sólo puedes leer un capítulo para empezar a trabajar con Git, es éste. Este capítulo cubre todos los comandos básicos que necesitas para hacer la gran mayoría de las cosas a las que vas a dedicar tu tiempo en Git. Al final del capítulo, deberías ser capaz de configurar e inicializar un repositorio, comenzar y detener el seguimiento de archivos, y preparar (stage) y confirmar (commit) cambios. También te enseñaremos a configurar Git para que ignore ciertos archivos y patrones, cómo deshacer errores rápida y fácilmente, cómo navegar por la historia de tu proyecto y ver cambios entre confirmaciones, y cómo enviar (push) y recibir (pull) de repositorios remotos. </strong></a>
 			  
 			  <h2><strong>Obteniendo un repositorio Git</strong></h2>
@@ -142,7 +146,9 @@ $(function() {
 			  <a><strong>Si deseas obtener una copia de un repositorio Git existente —por ejemplo, un proyecto en el que te gustaría contribuir— el comando que necesitas es:<br>Gid clone.<br>Si estás familiarizado con otros sistemas de control de versiones como Subversión, verás que el comando es<br>clone y no checkout. . Es una distinción importante, ya que Git recibe una copia de casi todos los datos que tiene el servidor. Cada versión de cada archivo de la historia del proyecto es descargada cuando ejecutas Git clone. De hecho, si el disco de tu servidor se corrompe, puedes usar cualquiera de los clones en cualquiera de los clientes para devolver al servidor al estado en el que estaba cuando fue clonado (puede que pierdas algunos hooksdel lado del servidor y demás, pero toda la información versionada estaría ahí<br>Puedes clonar un repositorio con Git clone [url]. Por ejemplo, si quieres clonar la librería Ruby llamada Grit, harías algo así:<br><br>git clone git://github.com/schacon/grit.git<br><br>Esto crea un directorio llamado "Grit", inicializa un directorio. Git en su interior, descarga toda la información de ese repositorio, y saca una copia de trabajo de la última versión. Si te metes en el nuevo directorio Grit, verás que están los archivos del proyecto, listos para ser utilizados. Si quieres clonar el repositorio a un directorio con otro nombre que no sea grit, puedes especificarlo con la siguiente opción de línea de comandos:<br><br>$ git clone git://github.com/schacon/grit.git mygrit<br><br>Ese comando hace lo mismo que el anterior, pero el directorio de destino se llamará mygrit.<br>Git te permite usar distintos protocolos de transferencia. El ejemplo anterior usa el protocolo git://, pero también te puedes encontrar con http(s):// o usuario@servidor:/ruta.git, que utiliza el protocolo de transferencia SSH.<br><br>#   (use "git add "file>..." to include in what will be committed)<br><br>#   README"<br><br> nothing added to commit but untracked files present (use "git add" to track).<br>Puedes ver que tu nuevo archivo README aparece bajo la cabecera “Archivos sin seguimiento” (“Untracked files”) de la salida del comando. Sin seguimiento significa básicamente que Git ve un archivo que no estaba en la instantánea anterior; Git no empezará a incluirlo en las confirmaciones de tus instantáneas hasta que se lo indiques explícitamente. Lo hace para que no incluyas accidentalmente archivos binarios generados u otros archivos que no tenías intención de incluir. Sí que quieres incluir el README, así que vamos a iniciar el seguimiento del archivo.</a></strong>
 			  
 			  <h2><strong>Crear el repositorio remoto en GitHub</strong></h2>
-		    <li>1 En GitHub.com, crea un nuevo repositorio.</li>
+			  
+		    <img src="Multimedia/create_repo.gif" width="1026" height="659" alt=""/>
+<li>1 En GitHub.com, crea un nuevo repositorio.</li>
 			  
 			<li>2 Nombra tu repositorio TU-USUARIO.GITHUB.IO</li>
 			 
@@ -161,8 +167,8 @@ $(function() {
 			  <li>9  Haz clic en Create repository.</li>
 			  
 			  <h2><strong>Clonar el repositorio con GitHub Desktop</strong></h2>
-			  
-			  <li>1 Entra en tu cuenta en GitHub.com y GitHub Desktop.</li>
+			  <img src="Multimedia/clonerepositorylocally.gif" width="1265" height="593" alt=""/>
+<li>1 Entra en tu cuenta en GitHub.com y GitHub Desktop.</li>
               <li>2 En la parte derecha de la pantalla, haz clic en Clone or download.</li>
               <li>3 Haz clic en Open in Desktop. Esto abrirá GitHub Desktop.</li>
               <li>4 elecciona dónde te gustaría guardarlo localmente en el campo Local Path.</li>
