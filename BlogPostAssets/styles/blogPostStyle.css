@@ -31,10 +31,10 @@ header nav a {
 	padding-right: 2%;
 }
 #content #mainContent h1, #content #mainContent h2 {
-    /* Styling for main headings */
-    color: rgba(146,146,146,1.00);
-    text-align: left;
-    -webkit-text-fill-color: #1fa121;
+	/* Styling for main headings */
+	color: rgba(248,0,4,1.00);
+	text-align: left;
+	-webkit-text-fill-color: #1fa121;
 }
 #content #mainContent h3 {
     /*Captions ot Taglines */
